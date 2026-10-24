@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07100c" />
+  <meta name="description" content="Um jardim digital criado para Mariana Machado florescer em 31 de outubro." />
+  <meta property="og:title" content="Mariana floresce" />
+  <meta property="og:description" content="Algumas pessoas recebem flores. Mariana recebeu um jardim que aprende a florescer com ela." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="flower-icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Mariana floresce</title>
+</head>
+<body>
+  <canvas id="nightCanvas" aria-hidden="true"></canvas>
+  <canvas id="gardenCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <button class="sound-button glass" id="soundButton" aria-label="Ativar som">
+    <span class="sound-dot"></span>
+    <span class="sound-label">som</span>
+  </button>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <section class="gate" id="gate" aria-label="Entrada do jardim">
+    <div class="gate-moon" aria-hidden="true">
+      <div class="moon-halo"></div>
+      <div class="moon-core"></div>
+      <div class="moon-leaf leaf-a"></div>
+      <div class="moon-leaf leaf-b"></div>
+      <div class="moon-leaf leaf-c"></div>
+    </div>
+
+    <div class="gate-copy">
+      <p class="eyebrow">31 de outubro de 2026</p>
+      <h1 class="signature" data-text="Mariana">Mariana</h1>
+      <p class="gate-line">há jardins que só existem para uma pessoa</p>
+      <button class="enter-button" id="enterButton">
+        <span>entrar</span>
+        <span class="enter-orbit" aria-hidden="true"></span>
+      </button>
+      <p class="microcopy">toque e deixe o jardim reconhecer você</p>
+    </div>
+
+    <div class="gate-roots" aria-hidden="true"></div>
+  </section>
+
+  <main id="experience" class="experience" aria-hidden="true">
+    <section class="scene hero-scene" id="sceneHero">
+      <div class="scene-inner hero-inner">
+        <p class="eyebrow reveal">uma noite para Mariana Machado</p>
+        <h2 class="display reveal">
+          algumas noites assustam
+          <span>esta queria florescer</span>
+        </h2>
+        <p class="body-copy reveal">
+          mova devagar
+          <br />
+          onde você passar algo vai nascer
+        </p>
+        <div class="scroll-cue reveal" aria-hidden="true">
+          <span></span>
+          <small>desça como quem entra num bosque</small>
+        </div>
+      </div>
+      <div class="hero-bloom" aria-hidden="true">
+        <div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div>
+        <div class="petal p5"></div><div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div>
+        <div class="flower-heart"></div>
+      </div>
+    </section>
+
+    <section class="scene garden-scene" id="sceneGarden">
+      <div class="scene-inner split">
+        <div>
+          <p class="eyebrow reveal">o jardim aprende seus gestos</p>
+          <h2 class="display reveal">você toca o escuro<br /><span>e ele devolve vida</span></h2>
+        </div>
+        <div class="body-copy reveal garden-instructions">
+          <p>mova o cursor</p>
+          <p>toque a tela</p>
+          <p>pare por alguns segundos</p>
+          <p>cada gesto deixa uma espécie diferente</p>
+        </div>
+      </div>
+      <div class="garden-meter glass reveal" id="gardenMeter">
+        <span>flores que nasceram com você</span>
+        <strong id="flowerCount">0</strong>
+      </div>
+    </section>
+
+    <section class="scene seed-scene" id="sceneSeed">
+      <div class="seed-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="scene-inner narrow center">
+        <p class="eyebrow reveal">uma semente só sua</p>
+        <h2 class="display reveal">plante uma coisa<br /><span>que você gostaria que nunca acabasse</span></h2>
+        <form class="seed-form reveal" id="seedForm">
+          <label for="seedInput">escreva aqui</label>
+          <div class="seed-field">
+            <input id="seedInput" maxlength="80" autocomplete="off" placeholder="uma palavra ou um pequeno desejo" />
+            <button type="submit">plantar</button>
+          </div>
+        </form>
+        <div class="planted-message" id="plantedMessage" aria-live="polite"></div>
+        <div class="seed-flower-stage" id="seedFlowerStage" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="scene herbarium-scene" id="sceneHerbarium">
+      <div class="scene-inner">
+        <p class="eyebrow reveal">herbário de Mariana</p>
+        <h2 class="display reveal">espécies que a botânica<br /><span>ainda não conseguiu explicar</span></h2>
+        <div class="herbarium-grid">
+          <article class="specimen reveal" data-species="noctiflora">
+            <canvas class="specimen-canvas" width="420" height="520"></canvas>
+            <div class="specimen-copy">
+              <p class="latin">Mariana noctiflora</p>
+              <h3>floresce principalmente quando ri</h3>
+              <p>espécie rara encontrada uma única vez e impossível de reproduzir em laboratório</p>
+            </div>
+          </article>
+
+          <article class="specimen reveal" data-species="luminosum">
+            <canvas class="specimen-canvas" width="420" height="520"></canvas>
+            <div class="specimen-copy">
+              <p class="latin">Machado luminosum</p>
+              <h3>cresce mesmo depois dos dias difíceis</h3>
+              <p>prefere carinho música silêncio confortável e lugares onde pode ser completamente ela</p>
+            </div>
+          </article>
+
+          <article class="specimen reveal" data-species="persistentis">
+            <canvas class="specimen-canvas" width="420" height="520"></canvas>
+            <div class="specimen-copy">
+              <p class="latin">Amor persistentis</p>
+              <h3>não consta em nenhum catálogo conhecido</h3>
+              <p>há indícios de que apareceu quando alguém percebeu que amar também pode ser cultivar</p>
+            </div>
+          </article>
+
+          <article class="specimen reveal" data-species="impossibilis">
+            <canvas class="specimen-canvas" width="420" height="520"></canvas>
+            <div class="specimen-copy">
+              <p class="latin">Unica impossibilis</p>
+              <h3>nenhuma outra cresce do mesmo jeito</h3>
+              <p>a forma das pétalas muda conforme quem observa e por isso nunca é exatamente a mesma flor</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene constellation-scene" id="sceneConstellation">
+      <canvas id="constellationCanvas" aria-hidden="true"></canvas>
+      <div class="scene-inner constellation-copy">
+        <p class="eyebrow reveal">olhei para cima</p>
+        <h2 class="display reveal">procurei você nas estrelas<br /><span>mas elas já sabiam seu nome</span></h2>
+        <p class="body-copy reveal">mova a luz sobre o céu</p>
+      </div>
+    </section>
+
+    <section class="scene code-scene" id="sceneCode">
+      <div class="scene-inner code-layout">
+        <div class="code-intro">
+          <p class="eyebrow reveal">há coisas que eu sei dizer melhor programando</p>
+          <h2 class="display reveal">então ensinei o computador<br /><span>a cuidar de uma flor</span></h2>
+        </div>
+        <div class="terminal glass reveal" id="terminal">
+          <div class="terminal-top"><span></span><span></span><span></span><small>mariana.floresce</small></div>
+          <pre id="terminalCode" aria-label="Código poético"></pre>
+          <button class="run-button" id="runCodeButton">executar</button>
+        </div>
+      </div>
+      <div class="code-bloom" id="codeBloom" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene rare-scene" id="sceneRare">
+      <div class="rare-vines" aria-hidden="true"></div>
+      <div class="scene-inner narrow center">
+        <p class="eyebrow reveal">a flor que abre uma vez por ano</p>
+        <h2 class="display reveal">ela não abre para qualquer pessoa</h2>
+        <p class="body-copy reveal">diga o nome que este jardim estava esperando</p>
+        <button class="name-button reveal" id="nameButton">dizer Mariana</button>
+        <p class="rare-status" id="rareStatus"></p>
+        <div class="rare-flower" id="rareFlower" aria-hidden="true">
+          <div class="rare-petal rp1"></div><div class="rare-petal rp2"></div><div class="rare-petal rp3"></div><div class="rare-petal rp4"></div>
+          <div class="rare-petal rp5"></div><div class="rare-petal rp6"></div><div class="rare-petal rp7"></div><div class="rare-petal rp8"></div>
+          <div class="rare-core"><span>era você</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene roots-scene" id="sceneRoots">
+      <canvas id="rootsCanvas" aria-hidden="true"></canvas>
+      <div class="scene-inner narrow center roots-copy">
+        <p class="eyebrow reveal">algumas coisas criam raízes</p>
+        <h2 class="display reveal">tudo que vivi antes de você<br /><span>de alguma forma terminou aqui</span></h2>
+        <p class="mariana-full reveal">Mariana Machado</p>
+      </div>
+    </section>
+
+    <section class="scene final-scene" id="sceneFinal">
+      <div class="final-flower" id="finalFlower" aria-hidden="true">
+        <span class="stem"></span>
+        <span class="leaf left"></span>
+        <span class="leaf right"></span>
+        <div class="mini-bloom">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <b></b>
+        </div>
+      </div>
+      <div class="final-lines" id="finalLines" aria-live="polite">
+        <p>eu poderia ter comprado flores</p>
+        <p>mas elas morreriam</p>
+        <p>então programei um jardim</p>
+        <p>para que alguma versão destas flores continue esperando por você</p>
+        <p class="final-date">feliz 31 de outubro Mariana</p>
+        <p class="love">eu te amo</p>
+      </div>
+      <button class="return-button" id="returnButton">voltar ao jardim</button>
+    </section>
+
+    <footer>
+      <p>feito para Mariana Machado em uma noite que decidiu florescer</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

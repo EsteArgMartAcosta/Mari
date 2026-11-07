@@ -1,0 +1,64 @@
+{
+  "title": "Contos para Sumercé Linda",
+  "subtitle": "do nada ao todo",
+  "pages": 250,
+  "chapters": [
+    {
+      "title": "1 As flores do chão",
+      "page": 5
+    },
+    {
+      "title": "2 A menor dor do mundo",
+      "page": 16
+    },
+    {
+      "title": "3 Revisão simples",
+      "page": 26
+    },
+    {
+      "title": "4 As duas bandeiras brancas",
+      "page": 36
+    },
+    {
+      "title": "5 Quatro minutos e treze segundos",
+      "page": 52
+    },
+    {
+      "title": "6 Atlas de um prato quase vazio",
+      "page": 70
+    },
+    {
+      "title": "7 A urna dos vivos",
+      "page": 88
+    },
+    {
+      "title": "8 As leis de Esteban",
+      "page": 106
+    },
+    {
+      "title": "9 O cartório das mudanças quase invisíveis",
+      "page": 127
+    },
+    {
+      "title": "10 A luz também demora",
+      "page": 149
+    },
+    {
+      "title": "11 Eu era a única palavra",
+      "page": 170
+    },
+    {
+      "title": "12 A cor que já estava esperando por você",
+      "page": 197
+    },
+    {
+      "title": "13 O dia que sabia demais",
+      "page": 219
+    },
+    {
+      "title": "14 O vigésimo sétimo símbolo",
+      "page": 242
+    }
+  ],
+  "pdfjs": "6.5.438"
+}

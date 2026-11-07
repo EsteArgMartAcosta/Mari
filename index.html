@@ -13,9 +13,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="book-entry.css" />
   <title>Mariana floresce</title>
 </head>
 <body>
+  <a class="book-shortcut" href="livro/" aria-label="Abrir o livro Contos para Sumercé Linda">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 5C8 2 4 3 2 4v15c4-2 7-1 10 1 3-2 6-3 10-1V4c-3-1-7-2-10 1Zm0 0v15"/></svg>
+    <span>o livro</span>
+  </a>
   <canvas id="nightCanvas" aria-hidden="true"></canvas>
   <canvas id="gardenCanvas" aria-hidden="true"></canvas>
   <div class="grain" aria-hidden="true"></div>
@@ -201,6 +206,22 @@
         <p class="eyebrow reveal">algumas coisas criam raízes</p>
         <h2 class="display reveal">tudo que vivi antes de você<br /><span>de alguma forma terminou aqui</span></h2>
         <p class="mariana-full reveal">Mariana Machado</p>
+      </div>
+    </section>
+
+    <section class="scene book-scene" id="sceneBook" aria-labelledby="bookInvitationTitle">
+      <div class="scene-inner book-invitation">
+        <a class="book-object reveal" href="livro/" aria-label="Abrir Contos para Sumercé Linda">
+          <img src="livro/assets/capa.webp" width="756" height="1072" alt="Capa de Contos para Sumercé Linda, do nada ao todo" loading="lazy" />
+        </a>
+        <div class="book-invitation-copy">
+          <p class="eyebrow reveal">o jardim também guarda histórias</p>
+          <h2 class="display reveal" id="bookInvitationTitle">Contos para<br /><span>Sumercé Linda</span></h2>
+          <p class="book-subtitle reveal">do nada ao todo</p>
+          <p class="body-copy reveal">Um lugar para sentar, abrir uma página<br />e deixar o mundo esperar um pouco.</p>
+          <a class="book-open-link reveal" href="livro/">abrir o livro <span aria-hidden="true">↗</span></a>
+          <p class="book-invitation-note reveal">14 contos · 250 páginas · no seu tempo</p>
+        </div>
       </div>
     </section>
 

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1eb">
+  <meta name="description" content="Um pedacinho de São Paulo transformado em carta de amor para a minha Sumercé Linda. Cinco dias, muitas descobertas e um segredo só nosso.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="São Paulo, com você | Para Sumercé Linda">
+  <meta property="og:description" content="Uma cidade inteira, uma só certeza: você é a minha parte favorita.">
+  <title>São Paulo, com você · para Sumercé Linda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Italianno&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f1eb;--paper2:#fdf9f4;--ink:#43373a;--muted:#74696a;--rose:#a66372;--rose2:#e6bcc1;--terracotta:#ba7b6e;--gold:#bca17e;--line:rgba(93,69,66,.17);--sage:#788c7a;--deep:#3f4952;--shadow:0 24px 70px rgba(84,53,63,.11)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-size:16px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;z-index:50;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.12' filter='url(%23n)'/%3E%3C/svg%3E")}
+    button,a{font:inherit}a{color:inherit}button{cursor:pointer}img,svg{max-width:100%}button:focus-visible,a:focus-visible{outline:3px solid #a66372;outline-offset:4px}
+    ::selection{background:#e7c5c6;color:#4a333b}
+    .skip-link{position:absolute;left:-999px;z-index:200;background:#fff;padding:12px}.skip-link:focus{left:12px;top:12px}
+    .wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}
+    .micro{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:.20em;text-transform:uppercase}
+    .serif{font-family:"Playfair Display",Georgia,serif;font-weight:400}
+    .script{font-family:"Italianno",cursive;font-weight:400}
+    .accent{color:var(--rose)}.soft{color:var(--muted)}.center{text-align:center}
+    .rule{height:1px;background:var(--line);width:100%}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;z-index:20}
+    .brand{text-decoration:none;display:flex;align-items:center;gap:11px;font-size:13px;font-weight:600;letter-spacing:.02em}
+    .brand-symbol{width:32px;height:32px;color:var(--rose);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:30px;font-weight:400}
+    .nav-links{display:flex;align-items:center;gap:27px}.nav-links a{text-decoration:none;font-size:12px;color:var(--muted);transition:color .2s}.nav-links a:hover{color:var(--rose)}
+    .nav-button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:10px 15px;font-size:11px;color:var(--ink);transition:.25s}.nav-button:hover{background:#fff}
+    .hero{position:relative;min-height:min(800px,calc(100svh - 75px));min-height:max(650px,calc(100svh - 75px));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;isolation:isolate;overflow:hidden}
+    .hero::before{content:"";position:absolute;left:50%;top:9%;transform:translateX(-50%);width:min(74vw,800px);aspect-ratio:1;border:1px solid rgba(169,126,115,.17);border-radius:50%;z-index:-1}
+    .hero::after{content:"";position:absolute;left:50%;top:17%;transform:translateX(-50%);width:min(60vw,625px);aspect-ratio:1;border:1px solid rgba(169,126,115,.12);border-radius:50%;z-index:-1}
+    .floating-note{position:absolute;font-family:"Italianno",cursive;font-size:31px;color:#bb8491;opacity:.9;transform:rotate(-10deg)}
+    .floating-note.left{left:5%;top:18%}.floating-note.right{right:6%;top:25%;transform:rotate(9deg)}
+    .hero-kicker{display:flex;gap:15px;align-items:center;justify-content:center;color:#997d7c;margin-top:14px;margin-bottom:23px}
+    .hero-kicker span{height:1px;width:26px;background:#c9b6ac}
+    h1{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.056em;line-height:1.06;font-size:clamp(56px,7.8vw,117px);max-width:1060px;margin:0 auto}
+    h1 em{font-weight:400;color:var(--rose);position:relative;white-space:nowrap}
+    h1 em::after{content:"";position:absolute;left:5%;right:0;bottom:-8px;height:13px;border-bottom:2px solid #cb9d9c;border-radius:50%}
+    .hero-desc{max-width:490px;font-size:15px;color:var(--muted);margin:34px auto 22px;line-height:1.9}
+    .hero-cta{display:inline-flex;align-items:center;gap:12px;color:white;background:var(--rose);border:0;padding:15px 23px;border-radius:100px;font-size:12px;letter-spacing:.045em;transition:transform .2s,background .2s;text-decoration:none;box-shadow:0 9px 25px rgba(169,90,110,.2)}
+    .hero-cta:hover{transform:translateY(-3px);background:#8c4e5e}
+    .hero-date{margin-top:26px;font-size:10px;color:#968583}
+    .city-illustration{position:relative;width:100%;height:275px;margin-top:-21px;overflow:hidden;pointer-events:none}
+    .city-illustration svg{display:block;height:100%;width:100%}
+    .scroll-hint{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.15em;color:#947e7b;z-index:1}
+    section{scroll-margin-top:30px}
+    .intro{padding:105px 0 110px;text-align:center;background:var(--paper2);position:relative}
+    .ornament{font-family:Georgia,serif;font-size:25px;color:var(--rose);margin:14px 0}
+    .section-kicker{color:var(--rose);margin:0 0 22px}
+    .intro h2,.place-title,.five-days h2,.secrets h2,.final-section h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.045em;line-height:1.2}
+    .intro h2{font-size:clamp(37px,5vw,67px);margin:0 auto 26px;max-width:800px}
+    .intro p{max-width:620px;margin:0 auto;color:var(--muted);line-height:2}
+    .intro-script{font-size:45px;color:var(--rose);margin:25px 0 0}
+    .place-section{padding:100px 0 110px}
+    .place-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:36px}
+    .place-title{font-size:clamp(36px,4vw,60px);margin:0;max-width:550px}
+    .place-top p{max-width:310px;color:var(--muted);font-size:14px;margin:0 0 8px}
+    .postcards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+    .postcard{background:#fffaf6;padding:12px 12px 26px;border:1px solid #e9ddd2;box-shadow:0 8px 28px rgba(77,59,56,.045);transform:rotate(-1deg);transition:transform .4s,box-shadow .4s;position:relative}
+    .postcard:nth-child(2){transform:translateY(18px) rotate(1.3deg)}.postcard:nth-child(3){transform:rotate(-.6deg)}
+    .postcard:hover{transform:translateY(-10px) rotate(0);box-shadow:var(--shadow)}
+    .postcard-illustration{height:235px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .postcard-illustration svg{height:100%;width:100%}
+    .postcard-body{padding:23px 13px 4px}
+    .postcard-body .micro{color:var(--rose);font-size:9px}
+    .postcard h3{font:400 25px/1.3 "Playfair Display",Georgia,serif;margin:9px 0 10px}
+    .postcard p{font-size:13px;line-height:1.82;color:var(--muted);margin:0}
+    .stamp{position:absolute;right:20px;top:20px;width:52px;height:52px;border:1px dashed rgba(78,60,66,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(16deg);font:9px "DM Mono",monospace;letter-spacing:.09em;color:#835a63;z-index:2}
+    .five-days{padding:108px 0 120px;background:#eee3dd;position:relative;overflow:hidden}
+    .five-days::before{content:"";position:absolute;width:400px;height:400px;border:1px solid rgba(145,94,100,.1);border-radius:50%;top:-200px;right:-140px}
+    .five-days h2{font-size:clamp(39px,5.5vw,71px);max-width:730px;margin:0 auto 18px}
+    .five-days .lead{max-width:590px;color:#786b6a;font-size:14px;margin:0 auto 45px;line-height:1.9}
+    .day-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:31px}
+    .day-tab{background:transparent;border:1px solid #cdbcb3;color:#75676a;padding:12px 21px;min-width:107px;border-radius:100px;font-size:12px;transition:.25s}
+    .day-tab.active,.day-tab:hover{background:#6d4a55;border-color:#6d4a55;color:white}
+    .day-card{display:grid;grid-template-columns:1fr 1.07fr;min-height:470px;background:#faf6f2;box-shadow:0 18px 52px rgba(82,60,64,.095);border:1px solid #dfd0c8;overflow:hidden}
+    .day-art{min-height:410px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:45px;overflow:hidden;background:radial-gradient(circle at 50% 36%,#f8e8df,#ead1cb 62%,#cbaaad)}
+    .day-art::before{content:"";position:absolute;width:310px;height:310px;border:1px solid rgba(255,255,255,.65);border-radius:50%;top:42px;left:calc(50% - 155px)}
+    .day-art::after{content:"";position:absolute;width:222px;height:222px;border:1px solid rgba(255,255,255,.5);border-radius:50%;top:86px;left:calc(50% - 111px)}
+    .day-art[data-day="1"]{background:radial-gradient(circle at 50% 35%,#f5e9d5,#ded8c4 70%,#b2bca7)}
+    .day-art[data-day="2"]{background:radial-gradient(circle at 50% 35%,#f6e8df,#dbc1b9 70%,#b38c8c)}
+    .day-art[data-day="3"]{background:radial-gradient(circle at 50% 35%,#eee9e0,#d4d5d1 70%,#99a9ac)}
+    .day-art[data-day="4"]{background:radial-gradient(circle at 50% 35%,#e8e0e5,#c4b2c2 70%,#8e8ba5)}
+    .day-art .big-date{z-index:2;font:400 150px/1 "Playfair Display",Georgia,serif;color:rgba(96,66,74,.7);letter-spacing:-.09em}
+    .day-art .month{z-index:2;font:italic 32px "Playfair Display",serif;color:#785664;margin-top:0}
+    .day-art .tiny-flower{position:absolute;color:#fff9f4;font:70px Georgia;z-index:2;bottom:35px;right:35px;transform:rotate(-24deg);opacity:.8}
+    .day-copy{padding:49px clamp(27px,5vw,70px);display:flex;flex-direction:column;justify-content:center}
+    .day-copy .micro{color:var(--rose)}
+    .day-copy h3{font:400 clamp(35px,3.7vw,54px)/1.16 "Playfair Display",Georgia,serif;letter-spacing:-.04em;margin:12px 0 14px}
+    .day-sub{color:#a2797a;font:31px "Italianno",cursive;margin-bottom:19px}
+    .mode{display:inline-flex;align-items:center;border:1px solid #ddcbc3;padding:4px;border-radius:100px;align-self:flex-start;margin-bottom:25px}
+    .mode button{border:0;border-radius:100px;padding:7px 16px;background:transparent;color:#847172;font-size:11px}
+    .mode button[aria-pressed="true"]{background:#805d65;color:#fff}
+    #day-text{font-size:15px;line-height:2;color:#65595c;min-height:120px;transition:opacity .2s}
+    .song-link{display:inline-flex;align-items:center;gap:9px;margin-top:20px;font-size:12px;color:#965f6f;text-decoration:none;border-bottom:1px solid #b58a92;padding-bottom:7px;width:fit-content}
+    .song-link:hover{color:#6e3f50}
+    .day-note{margin-top:24px;color:#83716c;font-size:11px;text-align:center}
+    .secrets{padding:120px 0 122px;background:var(--paper2)}
+    .secrets h2{font-size:clamp(42px,5.3vw,71px);margin:0 auto 13px;max-width:740px}
+    .secrets .lead{max-width:580px;margin:0 auto 48px;color:var(--muted);line-height:1.9;font-size:14px}
+    .secret-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .secret{height:220px;border:1px solid #e2cfc8;background:linear-gradient(135deg,#f9eee9,#f6e4e0);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;transition:transform .28s,background .28s;overflow:hidden;text-align:center;color:#76535b}
+    .secret:nth-child(2),.secret:nth-child(5){background:linear-gradient(135deg,#f2f0e8,#e8e6db)}
+    .secret:nth-child(3),.secret:nth-child(6){background:linear-gradient(135deg,#eeecec,#e0dfe5)}
+    .secret:hover{transform:translateY(-4px)}
+    .secret::before{content:"";position:absolute;inset:11px;border:1px solid rgba(118,77,83,.18);pointer-events:none}
+    .secret .number{position:absolute;left:24px;top:20px;font-size:10px;color:#a58184}
+    .secret .icon-envelope{font:45px "Playfair Display",serif;line-height:1;color:#b6848d;transition:transform .3s}
+    .secret .secret-hint{font-size:11px;letter-spacing:.03em;max-width:220px}
+    .secret .reveal{display:none;font:italic 19px/1.6 "Playfair Display",serif;color:#604750;max-width:300px}
+    .secret.open{background:#fffaf6!important}
+    .secret.open .icon-envelope,.secret.open .secret-hint{display:none}
+    .secret.open .reveal{display:block}
+    .secret-progress{text-align:center;margin:30px 0 0;color:#957f7f;font-size:12px}
+    .last-secret{display:none;margin:24px auto 0;background:var(--rose);color:white;border:0;padding:13px 23px;border-radius:100px;font-size:12px}
+    .last-secret.visible{display:block}
+    .constellation{background:#343b46;color:#faf0e9;padding:103px 0 110px;position:relative;overflow:hidden;text-align:center}
+    .constellation:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(196,154,141,.13),transparent 57%);pointer-events:none}
+    .constellation h2{font:400 clamp(39px,5vw,65px)/1.2 "Playfair Display",serif;letter-spacing:-.04em;margin:0 0 12px}
+    .constellation p{font-size:13px;color:#c7c1c0;max-width:490px;margin:0 auto}
+    .sky{width:min(750px,100%);margin:25px auto 0;display:block}
+    .sky .star-point{cursor:pointer;transition:transform .25s;transform-box:fill-box;transform-origin:center}
+    .sky .star-point:hover,.sky .star-point:focus{transform:scale(1.3)}
+    .sky .star-point:focus{outline:none;filter:drop-shadow(0 0 5px #fff)}
+    #star-message{min-height:74px;max-width:560px;margin:7px auto 0;color:#fff7e8;font:italic 23px/1.65 "Playfair Display",serif}
+    .final-section{padding:120px 0 145px;text-align:center;position:relative}
+    .final-section h2{max-width:800px;margin:0 auto 22px;font-size:clamp(42px,6vw,83px)}
+    .final-section p{max-width:570px;margin:0 auto 28px;color:var(--muted);line-height:2}
+    .signature{font:45px "Italianno",cursive;color:var(--rose);margin:20px 0 25px}
+    .footer{border-top:1px solid var(--line);padding:28px 0 35px;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#8e7d7e;font-size:11px}
+    .flower-float{position:absolute;pointer-events:none;opacity:.8}
+    .flower-float.one{top:32px;left:8%;font:70px Georgia;color:#e5c3be;transform:rotate(21deg)}
+    .flower-float.two{bottom:8%;right:7%;font:65px Georgia;color:#b9beb2;transform:rotate(-10deg)}
+    .petal{position:fixed;top:-20px;left:0;border-radius:70% 0 70% 0;width:8px;height:13px;background:#d8a4a5;opacity:.55;pointer-events:none;z-index:30;animation:fall linear forwards}
+    @keyframes fall{to{transform:translate(90px,110vh) rotate(540deg);opacity:0}}
+    .modal{position:fixed;inset:0;z-index:100;background:rgba(30,29,34,.67);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(9px)}
+    .modal.open{display:flex}
+    .modal-panel{background:#fcf6ef;position:relative;max-width:670px;width:100%;max-height:90svh;overflow:auto;padding:clamp(30px,6vw,78px);box-shadow:0 20px 80px rgba(0,0,0,.2);text-align:center;border:1px solid #d4c2b5}
+    .modal-panel:before{content:"";position:absolute;inset:13px;border:1px solid #ddcfc6;pointer-events:none}
+    .modal-close{position:absolute;right:24px;top:20px;background:transparent;border:0;font-size:28px;color:#856971;line-height:1}
+    .modal-panel h2{font:400 clamp(37px,5vw,60px)/1.1 "Playfair Display",serif;letter-spacing:-.04em;margin:12px 0 24px}
+    .modal-panel p{color:#6b5b5e;line-height:2.05;font-size:15px}
+    .modal-panel .script{font-size:42px;color:#a66b79;margin-top:16px}
+    .toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:#684b56;color:white;padding:12px 18px;border-radius:100px;font-size:12px;opacity:0;transition:.25s;z-index:120;pointer-events:none;text-align:center;max-width:calc(100% - 30px)}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    .reveal-scroll{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+    .reveal-scroll.in-view{opacity:1;transform:translateY(0)}
+    body.night{--paper:#eae5e8;--paper2:#f5f0f1;--ink:#403b48;--rose:#8e637c}
+    body.night .hero{background:radial-gradient(ellipse at center,#eeebe9,#e2dade)}
+    @media(max-width:900px){
+      .hero{min-height:750px}.postcard-illustration{height:200px}.place-top{align-items:start}
+      .day-copy{padding:40px}.day-art .big-date{font-size:125px}
+      .floating-note.left{left:1%}.floating-note.right{right:1%}
+    }
+    @media(max-width:680px){
+      .wrap{width:min(100% - 36px,540px)}
+      .nav{height:68px}.nav-links a{display:none}.nav-links{gap:8px}.nav-button{font-size:10px;padding:8px 12px}
+      .brand{font-size:11px}.brand-symbol{width:24px;font-size:24px}
+      .hero{min-height:680px;padding-top:80px;justify-content:flex-start}
+      .hero::before{width:540px;top:6%}.hero::after{width:420px;top:14%}
+      .hero-kicker{font-size:9px;margin-bottom:20px}h1{font-size:clamp(53px,12vw,80px)}
+      .hero-desc{font-size:13px;max-width:340px;margin-top:26px}
+      .floating-note{font-size:22px}.floating-note.left{top:9%}.floating-note.right{top:16%}
+      .city-illustration{height:190px;margin-top:-105px}.scroll-hint{display:none}
+      .intro,.place-section,.five-days,.secrets,.constellation,.final-section{padding-block:78px}
+      .intro h2{font-size:42px}.intro p{font-size:14px}
+      .place-top{display:block}.place-top p{margin-top:18px}.postcards{grid-template-columns:1fr;gap:23px}
+      .postcard,.postcard:nth-child(2),.postcard:nth-child(3){transform:none}
+      .postcard-illustration{height:235px}
+      .day-tabs{gap:6px}.day-tab{min-width:0;padding:10px 12px;font-size:10px;flex:1}
+      .day-card{grid-template-columns:1fr}.day-art{min-height:210px;padding:15px}
+      .day-art::before{top:-50px}.day-art::after{top:-4px}
+      .day-art .big-date{font-size:94px}.day-art .month{font-size:25px}
+      .day-art .tiny-flower{font-size:38px;bottom:18px;right:20px}
+      .day-copy{padding:31px 27px 40px}.day-copy h3{font-size:38px}
+      .day-sub{margin-bottom:13px}.secret-grid{grid-template-columns:1fr 1fr;gap:9px}
+      .secret{height:190px;padding:12px}.secret .reveal{font-size:15px}.secret .secret-hint{font-size:10px}.secret .number{left:16px;top:13px}
+      .constellation h2{font-size:43px}#star-message{font-size:20px}
+      .footer{display:block;text-align:center}.footer span{display:block;margin:8px}
+      .flower-float.one{left:0}.flower-float.two{right:0}
+    }
+    @media(max-width:360px){.nav-button{padding:7px 8px}.brand{gap:2px}.hero{min-height:640px}.hero h1{font-size:49px}.day-tab{padding:9px 7px}.secret-grid{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+      .reveal-scroll{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav wrap">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-symbol" aria-hidden="true">✳</span> uma cidade, um amor</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#cidade">a cidade</a><a href="#dias">nossos dias</a><a href="#segredos">segredinhos</a>
+      <button class="nav-button" id="night-toggle" type="button" aria-pressed="false">☾ &nbsp; luz suave</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="floating-note left" aria-hidden="true">sorte a minha</div>
+      <div class="floating-note right" aria-hidden="true">meu bem querer</div>
+      <div class="wrap">
+        <div class="hero-kicker micro"><span></span>uma carta escondida na cidade<span></span></div>
+        <h1>São Paulo ficou<br>mais bonita <em>com você.</em></h1>
+        <p class="hero-desc">Para a minha Sumercé Linda. Um lugar pequenininho na internet, feito para lembrar que, mesmo numa cidade imensa, meu olhar sempre procura o mesmo sorriso.</p>
+        <a class="hero-cta" href="#carta">Começar nossa história <span aria-hidden="true">↗</span></a>
+        <p class="hero-date micro">18 a 22 de novembro · um presente só seu</p>
+      </div>
+    </section>
+
+    <div class="city-illustration" aria-label="Ilustração poética do horizonte de São Paulo, com o MASP e árvores">
+      <svg viewBox="0 0 1440 280" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Horizonte ilustrado de São Paulo em tons rosados">
+        <defs>
+          <linearGradient id="clouds" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f7f1eb"/><stop offset="1" stop-color="#edd6d1"/></linearGradient>
+          <linearGradient id="build" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#d6b8b7"/><stop offset="1" stop-color="#ae8993"/></linearGradient>
+          <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#b4a19c"/><stop offset="1" stop-color="#aa8c8b"/></linearGradient>
+        </defs>
+        <rect width="1440" height="280" fill="url(#clouds)"/>
+        <circle cx="1040" cy="75" r="42" fill="#f0d5bd" opacity=".85"/>
+        <g fill="#dfc8c2" opacity=".8">
+          <rect x="30" y="165" width="65" height="100"/><rect x="100" y="131" width="44" height="133"/><rect x="152" y="155" width="63" height="112"/>
+          <rect x="221" y="178" width="68" height="90"/><rect x="309" y="126" width="32" height="144"/>
+          <rect x="356" y="145" width="70" height="125"/><rect x="433" y="183" width="48" height="88"/><rect x="985" y="164" width="80" height="110"/>
+          <rect x="1068" y="121" width="55" height="154"/><rect x="1130" y="148" width="40" height="124"/><rect x="1180" y="101" width="46" height="172"/>
+          <rect x="1239" y="139" width="70" height="136"/><rect x="1321" y="161" width="48" height="115"/><rect x="1380" y="118" width="50" height="158"/>
+        </g>
+        <g fill="url(#build)">
+          <rect x="470" y="172" width="64" height="97"/><rect x="541" y="136" width="44" height="130"/><rect x="595" y="173" width="41" height="99"/>
+          <rect x="644" y="151" width="38" height="120"/><rect x="690" y="167" width="48" height="104"/><rect x="744" y="134" width="41" height="137"/>
+          <rect x="792" y="172" width="68" height="99"/><rect x="870" y="155" width="51" height="116"/><rect x="933" y="173" width="46" height="98"/>
+        </g>
+        <g fill="#f4e5df" opacity=".5">
+          <path d="M105 150h6v5h-6zm20 0h6v5h-6zm0 20h6v5h-6zm-20 20h6v5h-6zM556 155h5v6h-5zm16 0h5v6h-5zm-16 22h5v6h-5zm16 22h5v6h-5zM760 160h5v6h-5zm14 0h5v6h-5zm-14 25h5v6h-5zM1193 122h5v5h-5zm17 0h5v5h-5zm-17 18h5v5h-5z"/>
+        </g>
+        <g transform="translate(575 177)">
+          <rect x="0" y="0" width="260" height="63" rx="2" fill="#d8c0b8"/>
+          <rect x="0" y="0" width="260" height="8" fill="#a96871"/>
+          <path d="M14 10v64m232-64v64" stroke="#a96871" stroke-width="10"/>
+          <path d="M32 70h195" stroke="#aa8f8c" stroke-width="3"/>
+          <path d="M22 27h217M22 46h217" stroke="#edd9d2" stroke-width="1.5"/>
+        </g>
+        <path d="M0 247Q170 227 330 248T660 247T1010 243T1440 249V280H0Z" fill="url(#ground)" opacity=".7"/>
+        <g fill="#8a9a86" opacity=".9">
+          <circle cx="295" cy="232" r="26"/><circle cx="264" cy="242" r="21"/><circle cx="326" cy="245" r="24"/>
+          <circle cx="997" cy="236" r="22"/><circle cx="1030" cy="241" r="25"/><circle cx="1370" cy="238" r="23"/><circle cx="1410" cy="237" r="25"/>
+        </g>
+        <path d="M0 259Q370 244 720 262T1440 256v24H0Z" fill="#a08f8b" opacity=".5"/>
+      </svg>
+    </div>
+
+    <section class="intro" id="carta">
+      <div class="wrap reveal-scroll">
+        <div class="section-kicker micro">antes de qualquer passeio</div>
+        <div class="ornament" aria-hidden="true">✳</div>
+        <h2>Se a cidade tem milhões de histórias,<br><i class="accent">a minha favorita é a nossa.</i></h2>
+        <p>Minha Sumercé Linda, eu poderia te mostrar ruas, parques, livrarias e cafés. Mas, se você me perguntar qual é a coisa mais bonita de São Paulo, eu vou responder sem pensar: é a maneira como a cidade muda quando estou com você. O barulho fica mais distante. O tempo, mais generoso. E o mundo parece caber direitinho no espaço entre a sua mão e a minha.</p>
+        <p class="intro-script script">você é o meu lugar bonito</p>
+      </div>
+    </section>
+
+    <section class="place-section" id="cidade">
+      <div class="wrap">
+        <div class="place-top reveal-scroll">
+          <div><p class="micro section-kicker">postais que eu escreveria para você</p><h2 class="place-title">Três jeitos de olhar São Paulo.<br><i class="accent">Todos terminam em você.</i></h2></div>
+          <p>Não são roteiros nem promessas de lugares visitados. São pequenos cenários onde meu amor por você inventa maneiras de se dizer.</p>
+        </div>
+        <div class="postcards">
+          <article class="postcard reveal-scroll">
+            <div class="postcard-illustration" style="background:#eedbd4">
+              <span class="stamp" aria-hidden="true">SP · 01</span>
+              <svg viewBox="0 0 360 235" aria-hidden="true">
+                <circle cx="265" cy="61" r="34" fill="#f8e8c7"/><g fill="#d2a9a5"><rect x="19" y="102" width="57" height="133"/><rect x="78" y="71" width="37" height="164"/><rect x="126" y="123" width="46" height="112"/><rect x="285" y="98" width="60" height="137"/></g>
+                <g transform="translate(60 120)"><rect width="240" height="59" fill="#e9c9c0"/><rect width="240" height="7" fill="#9d5763"/><path d="M17 6v90m206-90v90" stroke="#aa6470" stroke-width="9"/><path d="M36 78h168" stroke="#956d70" stroke-width="3"/></g>
+                <path d="M0 215Q100 196 197 214T360 214V235H0Z" fill="#a4a795"/><g fill="#849886"><circle cx="30" cy="208" r="25"/><circle cx="323" cy="209" r="33"/></g>
+              </svg>
+            </div>
+            <div class="postcard-body"><div class="micro">av. paulista · a pressa da cidade</div><h3>O tempo fica manso.</h3><p>São Paulo corre o dia inteiro. Mas, quando você sorri para mim, não existe um único lugar aonde eu tenha pressa de chegar.</p></div>
+          </article>
+          <article class="postcard reveal-scroll">
+            <div class="postcard-illustration" style="background:#e5e6d9">
+              <span class="stamp" aria-hidden="true">SP · 02</span>
+              <svg viewBox="0 0 360 235" aria-hidden="true">
+                <circle cx="276" cy="58" r="35" fill="#f4dfc5"/><path d="M0 174Q100 144 185 172T360 168V235H0Z" fill="#bfccba"/><path d="M0 198Q110 176 196 196T360 193V235H0Z" fill="#a7baaa"/>
+                <path d="M154 234v-91" stroke="#806d64" stroke-width="9" stroke-linecap="round"/><g fill="#8fa28c"><circle cx="128" cy="132" r="48"/><circle cx="181" cy="118" r="47"/><circle cx="157" cy="84" r="48"/><circle cx="104" cy="101" r="31"/><circle cx="211" cy="152" r="28"/></g>
+                <g fill="#d2b8af"><path d="M0 235Q100 212 190 230T360 232" stroke="#ead9bd" stroke-width="9" fill="none"/></g>
+                <g fill="#fff5e9"><circle cx="55" cy="203" r="5"/><circle cx="294" cy="204" r="5"/><circle cx="315" cy="225" r="4"/></g>
+              </svg>
+            </div>
+            <div class="postcard-body"><div class="micro">ibirapuera · a calma</div><h3>Um silêncio que abraça.</h3><p>Entre as árvores e a luz atravessando as folhas, eu só desejaria uma coisa: ouvir você me contar qualquer bobagem, para guardar sua voz comigo.</p></div>
+          </article>
+          <article class="postcard reveal-scroll">
+            <div class="postcard-illustration" style="background:#e8dfdf">
+              <span class="stamp" aria-hidden="true">SP · 03</span>
+              <svg viewBox="0 0 360 235" aria-hidden="true">
+                <path d="M0 100h360" stroke="#8e858b" stroke-width="2"/>
+                <path d="M30 100q0 10 10 10h26q10 0 10-10zM142 100q0 10 10 10h26q10 0 10-10zM254 100q0 10 10 10h26q10 0 10-10z" fill="#b7787b"/>
+                <path d="M53 101v57m112-57v68m112-68v59" stroke="#8e6b76" stroke-width="1.5"/>
+                <g fill="#bf8f91"><rect x="29" y="123" width="49" height="52" rx="12"/><rect x="141" y="134" width="49" height="52" rx="12"/><rect x="253" y="123" width="49" height="52" rx="12"/></g>
+                <g stroke="#f2e5d7" stroke-width="2"><path d="M53 131v34m-12-18h25M165 142v35m-12-18h25M277 131v34m-12-18h25"/></g>
+                <path d="M0 210Q75 193 150 210T360 208v27H0Z" fill="#b8aaa5"/>
+                <g fill="#9ca4a0" opacity=".6"><rect x="10" y="164" width="31" height="55"/><rect x="319" y="155" width="28" height="66"/><rect x="104" y="194" width="24" height="27"/></g>
+              </svg>
+            </div>
+            <div class="postcard-body"><div class="micro">liberdade · pequenos desejos</div><h3>O brilho das coisas simples.</h3><p>Até as lanternas parecem guardar desejos. O meu é simples: que a vida sempre encontre um jeito de colocar sua mão perto da minha.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="five-days" id="dias">
+      <div class="wrap">
+        <div class="center reveal-scroll">
+          <p class="micro section-kicker">um pequeno calendário para nós</p>
+          <h2>Cinco dias.<br><i>Infinitas maneiras de te escolher.</i></h2>
+          <p class="lead">Um bilhete para cada manhã e outro para cada noite. Toque nos dias. O coração deste lugar muda com você.</p>
+        </div>
+        <div class="day-tabs" role="group" aria-label="Escolha um dia">
+          <button class="day-tab active" type="button" data-day="0" aria-pressed="true">qua · 18</button>
+          <button class="day-tab" type="button" data-day="1" aria-pressed="false">qui · 19</button>
+          <button class="day-tab" type="button" data-day="2" aria-pressed="false">sex · 20</button>
+          <button class="day-tab" type="button" data-day="3" aria-pressed="false">sáb · 21</button>
+          <button class="day-tab" type="button" data-day="4" aria-pressed="false">dom · 22</button>
+        </div>
+        <div class="day-card" aria-live="polite">
+          <div class="day-art" id="day-art" data-day="0" aria-hidden="true"><div class="big-date" id="day-number">18</div><div class="month">novembro</div><div class="tiny-flower">✳</div></div>
+          <div class="day-copy">
+            <span class="micro" id="day-chapter">CAPÍTULO 01 DE 05</span>
+            <h3 id="day-title">O dia do reencontro.</h3>
+            <div class="day-sub" id="day-subtitle">para a minha menina bonita</div>
+            <div class="mode" role="group" aria-label="Escolha o momento do dia">
+              <button type="button" id="morning" aria-pressed="true">☀ &nbsp; bom dia</button>
+              <button type="button" id="evening" aria-pressed="false">☾ &nbsp; boa noite</button>
+            </div>
+            <p id="day-text">Bom dia, Sumercé Linda. Hoje não preciso pedir muito ao universo. Basta que ele me permita chegar até você, olhar nos seus olhos e lembrar, mais uma vez, que a espera valeu a pena.</p>
+            <a class="song-link" id="song-link" href="https://www.youtube.com/results?search_query=Marisa+Monte+Ainda+Bem" target="_blank" rel="noopener noreferrer">♫ &nbsp; nossa canção de hoje: Ainda Bem <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="day-note">Os bilhetes não desaparecem. Você pode voltar a eles quantas vezes quiser.</p>
+      </div>
+    </section>
+
+    <section class="secrets" id="segredos">
+      <div class="wrap">
+        <div class="center reveal-scroll">
+          <p class="micro section-kicker">entre uma rua e outra</p>
+          <h2>Segredinhos que a cidade<br><i class="accent">não sabe guardar.</i></h2>
+          <p class="lead">Algumas coisas são pequenas demais para virar notícia, mas grandes demais para eu guardar sozinho. Cada envelope tem uma verdade minha sobre você.</p>
+        </div>
+        <div class="secret-grid" aria-label="Seis segredos para descobrir">
+          <button class="secret" type="button" data-secret="0" aria-expanded="false"><span class="number micro">01 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">um detalhe do seu sorriso · toque para abrir</span><span class="reveal">Às vezes eu lembro do seu sorriso no meio de uma tarefa difícil, e o dia fica menos pesado sem você nem perceber.</span></button>
+          <button class="secret" type="button" data-secret="1" aria-expanded="false"><span class="number micro">02 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">uma coisa que eu nunca digo o suficiente</span><span class="reveal">Eu admiro a mulher que você é, inclusive nos dias em que você mesma não percebe o quanto é extraordinária.</span></button>
+          <button class="secret" type="button" data-secret="2" aria-expanded="false"><span class="number micro">03 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">meu lugar favorito no mundo</span><span class="reveal">Não é uma cidade. Não é uma paisagem. É aquele instante em que posso encostar a cabeça perto da sua e ficar em paz.</span></button>
+          <button class="secret" type="button" data-secret="3" aria-expanded="false"><span class="number micro">04 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">sobre o jeito como você ama</span><span class="reveal">Eu vejo o carinho que existe nos seus gestos pequenos. E talvez você não saiba, mas é neles que eu mais me apaixono.</span></button>
+          <button class="secret" type="button" data-secret="4" aria-expanded="false"><span class="number micro">05 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">uma promessa que eu posso fazer</span><span class="reveal">Não posso prometer dias perfeitos. Posso prometer vontade de conversar, aprender, cuidar e continuar escolhendo você.</span></button>
+          <button class="secret" type="button" data-secret="5" aria-expanded="false"><span class="number micro">06 / 06</span><span class="icon-envelope" aria-hidden="true">✉</span><span class="secret-hint">uma coisa sobre o nosso futuro</span><span class="reveal">Quando imagino o futuro, não penso primeiro nos lugares. Penso na sua risada atravessando a casa que um dia teremos.</span></button>
+        </div>
+        <p class="secret-progress" id="secret-progress" aria-live="polite">0 de 6 segredinhos encontrados</p>
+        <button id="last-secret" class="last-secret" type="button">Abrir o segredo que faltava ♡</button>
+      </div>
+    </section>
+
+    <section class="constellation" aria-label="Constelação de elogios escondidos">
+      <div class="wrap">
+        <p class="micro" style="color:#d6b9b6;margin:0 0 20px">até o céu tem bilhetes para você</p>
+        <h2>Se eu pudesse desenhar<br><i>uma constelação...</i></h2>
+        <p>...ela teria seu nome. Toque nas estrelinhas e descubra o que eu escreveria no céu de São Paulo.</p>
+        <svg class="sky" viewBox="0 0 730 290" aria-label="Cinco estrelas interativas com mensagens de amor" role="group">
+          <g stroke="#a89ca0" stroke-width="1" stroke-dasharray="3 8" fill="none" opacity=".65">
+            <path d="M65 178L225 77L358 200L530 65L657 180"/><path d="M225 77L358 200L657 180"/>
+          </g>
+          <g fill="#faf2df" opacity=".43"><circle cx="110" cy="50" r="1.7"/><circle cx="320" cy="29" r="2"/><circle cx="650" cy="30" r="1.5"/><circle cx="407" cy="75" r="1.6"/><circle cx="99" cy="255" r="2"/><circle cx="588" cy="260" r="1.7"/><circle cx="710" cy="110" r="1.5"/></g>
+          <g class="star-point" tabindex="0" role="button" aria-label="Descobrir elogio número um" data-star="0"><circle cx="65" cy="178" r="23" fill="transparent"/><path d="M65 164l4 10 11 4-11 4-4 10-4-10-11-4 11-4z" fill="#ffe4b9"/></g>
+          <g class="star-point" tabindex="0" role="button" aria-label="Descobrir elogio número dois" data-star="1"><circle cx="225" cy="77" r="23" fill="transparent"/><path d="M225 63l4 10 11 4-11 4-4 10-4-10-11-4 11-4z" fill="#ffe4b9"/></g>
+          <g class="star-point" tabindex="0" role="button" aria-label="Descobrir elogio número três" data-star="2"><circle cx="358" cy="200" r="23" fill="transparent"/><path d="M358 185l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#ffe4b9"/></g>
+          <g class="star-point" tabindex="0" role="button" aria-label="Descobrir elogio número quatro" data-star="3"><circle cx="530" cy="65" r="23" fill="transparent"/><path d="M530 50l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#ffe4b9"/></g>
+          <g class="star-point" tabindex="0" role="button" aria-label="Descobrir elogio número cinco" data-star="4"><circle cx="657" cy="180" r="23" fill="transparent"/><path d="M657 165l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#ffe4b9"/></g>
+        </svg>
+        <div id="star-message" aria-live="polite">“O céu já sabe: eu acho você a coisa mais bonita que existe.”</div>
+      </div>
+    </section>
+
+    <section class="final-section" id="final">
+      <span class="flower-float one" aria-hidden="true">✳</span><span class="flower-float two" aria-hidden="true">✿</span>
+      <div class="wrap reveal-scroll">
+        <p class="micro section-kicker">uma última coisinha, meu amor</p>
+        <h2>Entre todas as ruas<br>do mundo, eu escolheria<br><i class="accent">caminhar ao seu lado.</i></h2>
+        <p>Guardei uma carta final para quando você quiser ficar mais um pouquinho neste lugar. Ela não fala de São Paulo. Fala da pessoa que faz qualquer cidade parecer um lar.</p>
+        <button class="hero-cta" id="open-letter" type="button">Abrir a carta para Sumercé Linda <span aria-hidden="true">♡</span></button>
+        <div class="signature">com o amor mais meu que existe</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>✳ &nbsp; Um presente para Sumercé Linda</span>
+    <span>Feito com carinho, em São Paulo · novembro de 2026</span>
+    <button type="button" class="nav-button" id="share-page">Compartilhar este cantinho ↗</button>
+  </footer>
+
+  <div class="modal" id="letter-modal" role="dialog" aria-modal="true" aria-labelledby="letter-title" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="close-letter" type="button" aria-label="Fechar carta">×</button>
+      <span class="micro accent">uma carta só para você</span>
+      <h2 id="letter-title">Minha Sumercé Linda,</h2>
+      <p>Eu queria te dar uma coisa que coubesse no bolso, mas que tivesse espaço para tudo o que sinto por você. Então inventei este lugar.</p>
+      <p>São Paulo é enorme. Tem ruas que a gente ainda não conhece, tardes que ainda não viveu e lugares nos quais ainda vamos nos perder de mãos dadas. Mas, quando penso nesta cidade, não é a sua grandeza que me emociona. É saber que, por alguns dias, ela guarda você pertinho de mim.</p>
+      <p>Obrigado por fazer esse encontro acontecer, por atravessar distâncias e por me lembrar que o amor também mora nas coisas pequenas: um café, uma conversa sem pressa, uma risada inesperada, um silêncio confortável.</p>
+      <p>Eu amo sua doçura, sua força, seu jeito particular de existir. Amo a pessoa que você é, e não apenas o que sinto quando estou com você. Quero continuar aprendendo a te amar melhor, dia após dia, com presença, respeito e ternura.</p>
+      <p>E, quando esta viagem acabar, quero que você saiba: não é o fim de uma coisa bonita. É mais uma página de tudo o que ainda vamos escrever juntos.</p>
+      <p>Se algum dia a distância apertar, volte aqui. Tem um pedacinho de mim esperando por você.</p>
+      <div class="script">sempre seu ♡</div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    (function(){
+      "use strict";
+      var days=[
+        {number:"18",title:"O dia do reencontro.",sub:"a espera ganhou um abraço",morning:"Bom dia, Sumercé Linda. Hoje não preciso pedir muito ao universo. Basta que ele me permita chegar até você, olhar nos seus olhos e lembrar, mais uma vez, que a espera valeu a pena.",evening:"Boa noite, meu amor. Se o mundo inteiro tivesse parado por alguns segundos enquanto eu te abraçava, eu nem teria percebido. Há encontros que fazem o tempo perder a importância.",song:"Ainda Bem · Marisa Monte",search:"Marisa Monte Ainda Bem"},
+        {number:"19",title:"A beleza do cotidiano.",sub:"o amor mora nas coisas pequenas",morning:"Bom dia, minha Sumercé Linda. Gosto de imaginar um futuro feito de manhãs como esta: sem precisar de acontecimentos extraordinários, só da sua presença, do seu sorriso e da paz de saber que estamos juntos.",evening:"Boa noite, menina bonita. Hoje eu queria guardar numa caixinha todos os pequenos momentos em que você me fez feliz sem perceber. Eles seriam meus tesouros mais preciosos.",song:"Velha Infância · Tribalistas",search:"Tribalistas Velha Infância"},
+        {number:"20",title:"Um futuro com o seu nome.",sub:"tantos sonhos, a mesma pessoa",morning:"Bom dia, meu bem. Quando penso nos meus sonhos, gosto de perceber que você aparece nas coisas grandes e nas pequenas. Você não precisa fazer nada além de ser quem é para tornar meu mundo mais bonito.",evening:"Boa noite, Sumercé Linda. Eu não quero apenas guardar fotografias destes dias. Quero levar comigo a sensação de ter estado perto de você e a vontade tranquila de continuar construindo a nossa história.",song:"Partilhar · Rubel e ANAVITÓRIA",search:"Rubel Anavitoria Partilhar"},
+        {number:"21",title:"O sonho é estar ao seu lado.",sub:"o amanhã começa em nós",morning:"Bom dia, minha menina. Às vezes eu penso na vida que ainda vamos inventar: livros espalhados, conversas na cozinha, planos mudando, risadas no corredor. E sorrio porque, no centro disso tudo, está você.",evening:"Boa noite, meu amor. Não tenho como saber cada detalhe do nosso futuro. Mas tenho um desejo muito claro: continuar encontrando maneiras de cuidar de você e de fazer com que se sinta profundamente amada.",song:"Pra Sonhar · Marcelo Jeneci",search:"Marcelo Jeneci Pra Sonhar"},
+        {number:"22",title:"O amor sabe voltar.",sub:"o que é nosso atravessa distâncias",morning:"Bom dia, Sumercé Linda. Hoje quero aproveitar tudo sem correr. Quero olhar para você com calma, guardar o som da sua risada e agradecer por mais um dia em que a vida me deixou ser feliz bem pertinho de você.",evening:"Boa noite, meu bem. Se amanhã nossos caminhos precisarem seguir por ruas diferentes, quero que lembre: a distância não diminui o que você significa para mim. Eu levo você nas escolhas que faço e no futuro que sonho construir.",song:"Aonde Quer Que Eu Vá · Paralamas do Sucesso",search:"Paralamas do Sucesso Aonde Quer Que Eu Vá"}
+      ];
+      var stars=[
+        "Você tem uma delicadeza que faz os dias difíceis respirarem.",
+        "Eu admiro sua inteligência, sua coragem e a forma como você olha o mundo.",
+        "Seu sorriso continua me surpreendendo, mesmo quando eu acho que já o conheço de cor.",
+        "Você não precisa ser perfeita para ser absolutamente especial para mim.",
+        "Se o céu tivesse uma estrela favorita, eu saberia exatamente qual nome dar a ela."
+      ];
+      var current=0,mode="morning",lastFocus=null;
+      function el(id){return document.getElementById(id)}
+      function paintDay(){
+        var d=days[current];
+        el("day-number").textContent=d.number;
+        el("day-art").setAttribute("data-day",String(current));
+        el("day-chapter").textContent="CAPÍTULO 0"+(current+1)+" DE 05";
+        el("day-title").textContent=d.title;
+        el("day-subtitle").textContent=d.sub;
+        el("day-text").textContent=d[mode];
+        el("song-link").textContent="♫  nossa canção de hoje: "+d.song+" ↗";
+        el("song-link").href="https://www.youtube.com/results?search_query="+encodeURIComponent(d.search);
+        document.querySelectorAll(".day-tab").forEach(function(btn){
+          var active=Number(btn.getAttribute("data-day"))===current;
+          btn.classList.toggle("active",active);
+          btn.setAttribute("aria-pressed",String(active));
+        });
+        el("morning").setAttribute("aria-pressed",String(mode==="morning"));
+        el("evening").setAttribute("aria-pressed",String(mode==="evening"));
+      }
+      document.querySelectorAll(".day-tab").forEach(function(btn){
+        btn.addEventListener("click",function(){current=Number(btn.getAttribute("data-day"));paintDay()})
+      });
+      el("morning").addEventListener("click",function(){mode="morning";paintDay()});
+      el("evening").addEventListener("click",function(){mode="evening";paintDay()});
+      paintDay();
+      var discovered={};
+      try{discovered=JSON.parse(localStorage.getItem("mari-sp-secrets")||"{}")||{}}catch(e){discovered={}}
+      function updateSecrets(){
+        var found=Object.keys(discovered).filter(function(k){return discovered[k]}).length;
+        el("secret-progress").textContent=found+" de 6 segredinhos encontrados";
+        el("last-secret").classList.toggle("visible",found>=6);
+      }
+      document.querySelectorAll(".secret").forEach(function(btn){
+        var n=btn.getAttribute("data-secret");
+        if(discovered[n]){btn.classList.add("open");btn.setAttribute("aria-expanded","true")}
+        btn.addEventListener("click",function(){
+          btn.classList.toggle("open");
+          var open=btn.classList.contains("open");btn.setAttribute("aria-expanded",String(open));
+          if(open)discovered[n]=true;
+          try{localStorage.setItem("mari-sp-secrets",JSON.stringify(discovered))}catch(e){}
+          updateSecrets();
+        });
+      });
+      updateSecrets();
+      document.querySelectorAll("[data-star]").forEach(function(point){
+        function showStar(){
+          var n=Number(point.getAttribute("data-star"));
+          el("star-message").textContent="“"+stars[n]+"”";
+          point.querySelector("path").setAttribute("fill","#ffffff");
+        }
+        point.addEventListener("click",showStar);
+        point.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();showStar()}});
+      });
+      function openLetter(){
+        lastFocus=document.activeElement;el("letter-modal").classList.add("open");
+        el("letter-modal").setAttribute("aria-hidden","false");document.body.style.overflow="hidden";el("close-letter").focus();
+      }
+      function closeLetter(){
+        el("letter-modal").classList.remove("open");
+        el("letter-modal").setAttribute("aria-hidden","true");document.body.style.overflow="";
+        if(lastFocus&&lastFocus.focus)lastFocus.focus();
+      }
+      el("open-letter").addEventListener("click",openLetter);
+      el("last-secret").addEventListener("click",openLetter);
+      el("close-letter").addEventListener("click",closeLetter);
+      el("letter-modal").addEventListener("click",function(e){if(e.target===el("letter-modal"))closeLetter()});
+      document.addEventListener("keydown",function(e){
+        if(e.key==="Escape"&&el("letter-modal").classList.contains("open"))closeLetter();
+        if(e.key==="Tab"&&el("letter-modal").classList.contains("open")){
+          e.preventDefault();el("close-letter").focus();
+        }
+      });
+      var isNight=false;
+      el("night-toggle").addEventListener("click",function(){
+        isNight=!isNight;document.body.classList.toggle("night",isNight);
+        el("night-toggle").setAttribute("aria-pressed",String(isNight));
+        el("night-toggle").textContent=isNight?"☀  luz da manhã":"☾  luz suave";
+        if(isNight)petals(12);
+      });
+      var toastTimer;
+      function toast(s){el("toast").textContent=s;el("toast").classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){el("toast").classList.remove("show")},2900)}
+      el("share-page").addEventListener("click",function(){
+        if(navigator.share){
+          navigator.share({title:"São Paulo, com você",text:"Um cantinho feito com amor para Sumercé Linda",url:location.href}).catch(function(){});
+        }else if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(location.href).then(function(){toast("Endereço copiado com carinho ♡")}).catch(function(){toast("O endereço está na barra do navegador ♡")});
+        }else{toast("O endereço está na barra do navegador ♡")}
+      });
+      function petals(n){
+        if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+        for(var i=0;i<n;i++){
+          (function(i){setTimeout(function(){
+            var p=document.createElement("span");p.className="petal";p.style.left=(Math.random()*100)+"vw";
+            p.style.animationDuration=(4+Math.random()*4)+"s";p.style.background=["#d1a2a4","#e6c2b6","#cbb3bd"][i%3];
+            document.body.appendChild(p);setTimeout(function(){p.remove()},9000);
+          },i*110)})(i);
+        }
+      }
+      if("IntersectionObserver" in window){
+        var observer=new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target)}});
+        },{threshold:.12});
+        document.querySelectorAll(".reveal-scroll").forEach(function(item){observer.observe(item)});
+      }else{document.querySelectorAll(".reveal-scroll").forEach(function(item){item.classList.add("in-view")})}
+      window.addEventListener("load",function(){setTimeout(function(){petals(15)},650)});
+    })();
+  </script>
+</body>
+</html>
